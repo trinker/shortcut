@@ -11,4 +11,3 @@ URL: http://trinker.github.com/shortcut/
 BugReports: http://github.com/trinker/shortcut/issues
 Roxygen: list(wrap = FALSE)
 LazyData: TRUE
-
