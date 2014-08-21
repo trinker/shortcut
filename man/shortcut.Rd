@@ -3,13 +3,16 @@
 \alias{shortcut}
 \title{Create Shortcuts}
 \usage{
-shortcut(url = read_clip(), file = "", open = TRUE, check.ext = TRUE)
+shortcut(file = "", url = read_clip(), open = TRUE, check.ext = TRUE)
 }
 \arguments{
-\item{url}{A url to redirect to.}
-
 \item{file}{The name of the output file.  Defaults to the console.
 open A name to use for the file (.html extension).}
+
+\item{url}{A url to redirect to.}
+
+\item{open}{logical.  If \code{TRUE} \code{shortcut} attempts to open the
+file in a default browser.}
 
 \item{check.ext}{logical.  If \code{TRUE} check for and add an HTML file
 extension to file.}

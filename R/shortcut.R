@@ -2,9 +2,11 @@
 #' 
 #' Creates an HTML file that redirects to a specified link.
 #' 
-#' @param url A url to redirect to.
 #' @param file The name of the output file.  Defaults to the console.
 #' open A name to use for the file (.html extension).
+#' @param url A url to redirect to.
+#' @param open logical.  If \code{TRUE} \code{shortcut} attempts to open the 
+#' file in a default browser.
 #' @param check.ext logical.  If \code{TRUE} check for and add an HTML file 
 #' extension to file.
 #' @export
@@ -13,7 +15,7 @@
 #' \dontrun{
 #' shortcut("http://trinker.github.io/card/contact")
 #' }
-shortcut <- function(url=read_clip(), file = "", open = TRUE, check.ext = TRUE) { 
+shortcut <- function(file = "", url=read_clip(), open = TRUE, check.ext = TRUE) { 
 	message("Attempting to create shortcut\n")
 		
     root <- c("<!DOCTYPE html>", "<html>", "<head>", "<script>", "</script>", 
@@ -22,7 +24,7 @@ shortcut <- function(url=read_clip(), file = "", open = TRUE, check.ext = TRUE) 
     
     out <- sprintf(paste(root, collapse="\n"), url)
     
-    if (check.ext && tools::file_ext(file) != "html") {
+    if (check.ext && tools::file_ext(file) != "html" && file != "") {
         file <- paste0(file, ".html")
     }
     
