@@ -21,9 +21,9 @@ extension to file.}
 Creates an HTML file that redirects to a specified link.
 }
 \examples{
-shortcut("http://www.talkstats.com/")
+shortcut(url = "http://www.talkstats.com/")
 \dontrun{
-shortcut("http://trinker.github.io/card/contact")
+shortcut(url = "http://trinker.github.io/card/contact", file = "tyler")
 }
 }
 

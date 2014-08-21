@@ -11,9 +11,9 @@
 #' extension to file.
 #' @export
 #' @examples
-#' shortcut("http://www.talkstats.com/")
+#' shortcut(url = "http://www.talkstats.com/")
 #' \dontrun{
-#' shortcut("http://trinker.github.io/card/contact")
+#' shortcut(url = "http://trinker.github.io/card/contact", file = "tyler")
 #' }
 shortcut <- function(file = "", url=read_clip(), open = TRUE, check.ext = TRUE) { 
 	message("Attempting to create shortcut\n")
