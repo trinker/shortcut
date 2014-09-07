@@ -2,3 +2,5 @@
 ^\.Rproj\.user$
 \.Rprofile
 \.travis\.yml
+.travis.yml
+
