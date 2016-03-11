@@ -5,9 +5,10 @@ Version: 1.0.0
 Date: 2014-08-20
 Author: Tyler Rinker
 Maintainer: Tyler Rinker <tyler.rinker@gmail.com>
-Description: Creates HTML file shortcuts to links
+Description: Creates HTML file shortcuts to links.
 License: GPL-2
 URL: http://trinker.github.com/shortcut/
 BugReports: http://github.com/trinker/shortcut/issues
 Roxygen: list(wrap = FALSE)
 LazyData: TRUE
+RoxygenNote: 5.0.1

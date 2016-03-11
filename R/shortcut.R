@@ -33,7 +33,7 @@ function (file = NULL, url = read_clip(), open = TRUE, check.ext = TRUE) {
     if (check.ext && tools::file_ext(file) != "html" && file != "") {
         file <- paste0(file, ".html")
     }
-    cat(out, file = file)
+    cat(out, file = gsub("[:*?\"<>|]", "", file))
     message("...\n")
     if (open && file.exists(file)) {
         message(sprintf("Attempting to open %s...\n", file))
